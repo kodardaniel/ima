@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4803246552340906630}
   - component: {fileID: 4803246552340906631}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sampler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 697491212710435514}
   - component: {fileID: 7435695855472460265}
   - component: {fileID: 2984009912413345675}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sequencer Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,3 +319,4 @@ MonoBehaviour:
   _loudness: 0
   _loudest: 0
   multiplier: 10
+  lightMultiplier: 2
