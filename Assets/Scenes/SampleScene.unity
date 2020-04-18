@@ -192,6 +192,21 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 1ddfefcdd7d8f44f3b51d060cbe1d896, type: 3}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].value
+      value: 0.6793213
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 0.6223068
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].value
+      value: 0.20859337
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6024f054bfe7c04d9b02a3dd931bd2f, type: 3}
 --- !u!1001 &538933185
@@ -601,27 +616,87 @@ PrefabInstance:
     - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
-      value: 0.2656168
+      value: 0.14751378
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].value
-      value: 0.29434776
+      value: 0.2937069
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
-      value: 0.10082245
+      value: 0.083236694
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
-      value: 0.7453613
+      value: 0.5897217
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].value
-      value: 0.79491425
+      value: 0.70542145
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -3.0482373
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -3.0482373
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outWeight
+      value: 0.4552921
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].inSlope
+      value: -1.7241672
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].outSlope
+      value: -1.7241672
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].inWeight
+      value: 0.6659656
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].outWeight
+      value: 0.111974485
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].time
+      value: 0.7392273
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].value
+      value: 0.011291504
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].inSlope
+      value: -0.03046562
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].outSlope
+      value: -0.03046562
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].inWeight
+      value: 0.22315238
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6024f054bfe7c04d9b02a3dd931bd2f, type: 3}
@@ -985,6 +1060,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waves 02 (Sound Object)
       objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1072,6 +1152,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6024f054bfe7c04d9b02a3dd931bd2f, type: 3}
+--- !u!1001 &1093900715
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_Name
+      value: Soft piano (Sound Object) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -294
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2632756a6677ed84e9d1b402d1e0f662, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6024f054bfe7c04d9b02a3dd931bd2f, type: 3}
 --- !u!1001 &1229670407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,6 +1242,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Thunderstorm 01 (Sound Object)
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
@@ -1182,6 +1346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Granular Piano (Sequencer Object)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460264, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7435695855472460268, guid: a8cef0138eaff3b47b8c6455036a07b8,
         type: 3}
@@ -2866,6 +3035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Granular Piano (Sequencer Object) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460264, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7435695855472460268, guid: a8cef0138eaff3b47b8c6455036a07b8,
         type: 3}
