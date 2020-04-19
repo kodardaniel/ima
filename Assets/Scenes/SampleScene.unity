@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028353, g: 0.2257137, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802837, g: 0.22571404, b: 0.30692273, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,6 +120,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &207280732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_Name
+      value: Soft piano 002 Mids and highs (Sound Object)
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -152
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1d2899f29468945ecaa71d20efa8e659, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6024f054bfe7c04d9b02a3dd931bd2f, type: 3}
 --- !u!1001 &281554834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -961,6 +1040,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waves 01 (Sound Object)
       objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1024,12 +1108,12 @@ PrefabInstance:
     - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
-      value: 0.1413269
+      value: 0.13195038
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
-      value: 0.54400635
+      value: 0.525589
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823123, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
@@ -1162,7 +1246,7 @@ PrefabInstance:
     - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: m_Name
-      value: Soft piano (Sound Object) (1)
+      value: Soft piano 002 Lows (Sound Object)
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823124, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
@@ -1228,7 +1312,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 2632756a6677ed84e9d1b402d1e0f662, type: 3}
+      objectReference: {fileID: 8300000, guid: 56bae4d34d6ed476da17ded0b67ce341, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6024f054bfe7c04d9b02a3dd931bd2f, type: 3}
 --- !u!1001 &1229670407
