@@ -9,7 +9,7 @@ public class StepSequencer : MonoBehaviour
     {
         public bool Active;
         public int MidiNoteNumber = 60; // Midi Note Nuber 60 = C4
-        public double Duration = 8.0f;
+        public double Duration = 16.0f;
     }
 
     public delegate void HandleTick(double tickTime, int midiNoteNumber, double duration);

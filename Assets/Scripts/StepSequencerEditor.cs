@@ -27,7 +27,7 @@ public class StepSequencerEditor : Editor
         List<StepSequencer.Step> steps = sequencer.GetSteps();
 
         // Set the number of steps in the sequence
-        int numSteps = EditorGUILayout.IntSlider("# steps", steps.Count, 1, 128);
+        int numSteps = EditorGUILayout.IntSlider("# steps", steps.Count, 1, 512);
 
         // Add or remove steps based on the above slider's value
         while (numSteps > steps.Count)
