@@ -8,11 +8,11 @@ public class PlayRandomSound : MonoBehaviour
     public AudioClip[] audioClipArray;
     public float duration;
 
-    private AudioSource _as;
+    private AudioSource audioSource;
 
     void Awake()
 	{
-        _as = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
 	}
 
     // Start is called before the first frame update
@@ -24,12 +24,12 @@ public class PlayRandomSound : MonoBehaviour
 
     void RandomizeClip()
     {
-        _as.clip = audioClipArray[Random.Range(0, audioClipArray.Length)];
+        audioSource.clip = audioClipArray[Random.Range(0, audioClipArray.Length)];
     }
 
     void PlayClip()
     {  
-        _as.PlayOneShot(_as.clip);
+        audioSource.PlayOneShot(audioSource.clip);
         StartCoroutine(PrepNextClip());
     }
 
@@ -37,7 +37,7 @@ public class PlayRandomSound : MonoBehaviour
     IEnumerator PrepNextClip()
     {
         RandomizeClip();
-        duration = _as.clip.length;
+        duration = audioSource.clip.length;
         yield return new WaitForSecondsRealtime(duration);
         PlayClip();
     }

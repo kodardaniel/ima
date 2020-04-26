@@ -12,14 +12,14 @@ public class AudioDataVisSingle : MonoBehaviour
 
     private AudioSource audioSource;
     private float currentUpdateTime = 0f;
-    private float[] clipSampleData;
+    public float[] clipSampleData;
     // Vis
     private Material material;
     private Color emissionColor;
     private float intensity;
 
     // Use this for initialization
-    private void Awake()
+     void Awake()
     {
         audioSource = GetComponent<AudioSource>(); //this.gameObject.GetComponent<AudioSource>();
         clipSampleData = new float[sampleDataLength];
@@ -38,7 +38,7 @@ public class AudioDataVisSingle : MonoBehaviour
         if (currentUpdateTime >= updateStep)
         {
             currentUpdateTime = 0f;
-            //I read 1024 samples, which is about 80 ms on a 44khz stereo clip, beginning at the current sample position of the clip.
+            //1024 samples is about 80 ms on a 44khz stereo clip, beginning at the current sample position of the clip.
             audioSource.clip.GetData(clipSampleData, audioSource.timeSamples);
             loudness = 0f;
             foreach (var sample in clipSampleData)
