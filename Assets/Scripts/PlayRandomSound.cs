@@ -6,6 +6,7 @@ public class PlayRandomSound : MonoBehaviour
 {
     
     public AudioClip[] audioClipArray;
+    public float duration;
 
     private AudioSource _as;
 
@@ -17,20 +18,27 @@ public class PlayRandomSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayRandom();
+        RandomizeClip();
+        PlayClip();
     }
 
-    private void Update()
-    {
-       if (_as.isPlaying == false)
-        {
-            PlayRandom();
-        }
-    }
-
-    void PlayRandom()
+    void RandomizeClip()
     {
         _as.clip = audioClipArray[Random.Range(0, audioClipArray.Length)];
+    }
+
+    void PlayClip()
+    {  
         _as.PlayOneShot(_as.clip);
+        StartCoroutine(PrepNextClip());
+    }
+
+    // Coroutine for prepping next clip
+    IEnumerator PrepNextClip()
+    {
+        RandomizeClip();
+        duration = _as.clip.length;
+        yield return new WaitForSecondsRealtime(duration);
+        PlayClip();
     }
 }
