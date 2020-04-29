@@ -7,13 +7,11 @@ public class AudioDataVisSingle : MonoBehaviour
     public float updateStep = 0.1f;
     public int sampleDataLength = 1024;
     public float loudness;
-    // Vis
     public float multiplier = 10f;
 
     private AudioSource audioSource;
     private float currentUpdateTime = 0f;
     public float[] clipSampleData;
-    // Vis
     private Material material;
     private Color emissionColor;
     private float intensity;
@@ -21,8 +19,14 @@ public class AudioDataVisSingle : MonoBehaviour
     // Use this for initialization
      void Awake()
     {
-        audioSource = GetComponent<AudioSource>(); //this.gameObject.GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         clipSampleData = new float[sampleDataLength];
+    }
+
+    public void updateAudioSource()
+    {
+        Debug.Log(audioSource.clip);
+        //audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -52,6 +56,10 @@ public class AudioDataVisSingle : MonoBehaviour
         intensity = loudness * multiplier;
         material.SetColor("_EmissionColor", emissionColor * intensity);
 
+        if (Input.GetKeyDown("space"))
+        {
+            updateAudioSource();
+        }
     }
 
 }

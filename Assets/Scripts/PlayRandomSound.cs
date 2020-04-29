@@ -8,8 +8,10 @@ public class PlayRandomSound : MonoBehaviour
     
     public AudioClip[] audioClipArray;
     public float duration;
+    public AudioDataVisSingle Viz;
 
     private AudioSource audioSource;
+
 
     void Awake()
 	{
@@ -32,6 +34,7 @@ public class PlayRandomSound : MonoBehaviour
     {  
         audioSource.PlayOneShot(audioSource.clip);
         StartCoroutine(PrepNextClip());
+        Viz.updateAudioSource();
     }
 
     // Coroutine for prepping next clip
