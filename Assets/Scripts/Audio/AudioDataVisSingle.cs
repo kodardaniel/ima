@@ -52,7 +52,6 @@ public class AudioDataVisSingle : MonoBehaviour
         }
 
         // Visualization
-        Debug.Log(loudness);
         intensity = loudness * multiplier;
         material.SetColor("_EmissionColor", emissionColor * intensity);
     }
