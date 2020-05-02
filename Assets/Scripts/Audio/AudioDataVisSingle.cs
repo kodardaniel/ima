@@ -25,7 +25,6 @@ public class AudioDataVisSingle : MonoBehaviour
 
     public void updateAudioSource()
     {
-        Debug.Log(audioSource.clip);
         //audioSource = GetComponent<AudioSource>();
     }
 
@@ -53,13 +52,9 @@ public class AudioDataVisSingle : MonoBehaviour
         }
 
         // Visualization
+        Debug.Log(loudness);
         intensity = loudness * multiplier;
         material.SetColor("_EmissionColor", emissionColor * intensity);
-
-        if (Input.GetKeyDown("space"))
-        {
-            updateAudioSource();
-        }
     }
 
 }
