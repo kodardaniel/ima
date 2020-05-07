@@ -64,7 +64,6 @@ GameObject:
   - component: {fileID: 7435695855472460267}
   - component: {fileID: 7435695855472460270}
   - component: {fileID: 7435695855472460257}
-  - component: {fileID: 697491212710435514}
   - component: {fileID: 7435695855472460265}
   - component: {fileID: 2984009912413345675}
   m_Layer: 11
@@ -111,6 +110,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -156,8 +156,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7435695855472460264}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0.023529414, g: 0.25882354, b: 1, a: 1}
   m_Intensity: 0
   m_Range: 50
@@ -224,22 +225,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &697491212710435514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7435695855472460264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2223918b80f6f6b4291a434b35c4a829, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canHold: 1
-  item: {fileID: 0}
-  tempParent: {fileID: 0}
-  isHolding: 0
 --- !u!114 &7435695855472460265
 MonoBehaviour:
   m_ObjectHideFlags: 0
