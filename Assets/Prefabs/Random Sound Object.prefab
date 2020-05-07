@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 8490142196741347350}
   - component: {fileID: 8490142196741347346}
   - component: {fileID: 8490142196741347356}
-  - component: {fileID: 1967530065610310471}
   - component: {fileID: 7174815718485637394}
-  - component: {fileID: 6356332141809114345}
+  - component: {fileID: 4985049727656840499}
+  - component: {fileID: 7407989747514050887}
   m_Layer: 10
   m_Name: Random Sound Object
   m_TagString: Untagged
@@ -60,6 +60,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -236,22 +237,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1967530065610310471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8490142196741347349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2223918b80f6f6b4291a434b35c4a829, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canHold: 1
-  item: {fileID: 0}
-  tempParent: {fileID: 0}
-  isHolding: 0
 --- !u!114 &7174815718485637394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +256,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: de9182e29113d4f0894771408a6794f8, type: 3}
   - {fileID: 8300000, guid: 96f05687042a94ceeb418d312fa5db47, type: 3}
   duration: 0
---- !u!114 &6356332141809114345
+  Viz: {fileID: 0}
+--- !u!114 &4985049727656840499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,11 +266,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 8490142196741347349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4563345978586d04c842649d10488c9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 44d91f43ba836b24694dcfaf8b6ab7d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateStep: 0.1
-  sampleDataLength: 1024
-  loudness: 0
-  multiplier: 20
-  clipSampleData: []
+  audioSource: {fileID: 8490142196741347346}
+  sampleSize: 2048
+  absoluteValues: 1
+  boost: 0.2
+  freqBoost: 0
+  average: 0
+  max: 0
+  sample: []
+  dataType: 0
+  sampleSizeNames:
+  - 64
+  - 128
+  - 256
+  - 512
+  - 1024
+  - 2048
+  sampleSizeVals: 400000008000000000010000000200000004000000080000
+--- !u!114 &7407989747514050887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490142196741347349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a71561f5fd342a99bc5b60c3dddcd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: {fileID: 4985049727656840499}
+  multiplier: 10
