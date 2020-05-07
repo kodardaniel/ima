@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 959607703987823123}
   - component: {fileID: 959607703987823133}
   - component: {fileID: 7191174848778090822}
-  - component: {fileID: -6866855693982325016}
+  - component: {fileID: 1329540048150790873}
+  - component: {fileID: 6504197782806054028}
   m_Layer: 10
   m_Name: Sound Object
   m_TagString: Untagged
@@ -59,6 +60,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -251,7 +253,7 @@ MonoBehaviour:
   item: {fileID: 0}
   tempParent: {fileID: 0}
   isHolding: 0
---- !u!114 &-6866855693982325016
+--- !u!114 &1329540048150790873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,11 +262,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 959607703987823124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4563345978586d04c842649d10488c9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 44d91f43ba836b24694dcfaf8b6ab7d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateStep: 0.1
-  sampleDataLength: 1024
-  loudness: 0
-  multiplier: 20
-  clipSampleData: []
+  audioSource: {fileID: 959607703987823123}
+  sampleSize: 2048
+  absoluteValues: 1
+  boost: 0.2
+  freqBoost: 0
+  average: 0
+  max: 0
+  sample: []
+  dataType: 0
+  sampleSizeNames:
+  - 64
+  - 128
+  - 256
+  - 512
+  - 1024
+  - 2048
+  sampleSizeVals: 400000008000000000010000000200000004000000080000
+--- !u!114 &6504197782806054028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959607703987823124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a71561f5fd342a99bc5b60c3dddcd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: {fileID: 1329540048150790873}
+  multiplier: 10
