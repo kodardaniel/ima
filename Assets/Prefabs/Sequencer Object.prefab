@@ -62,7 +62,6 @@ GameObject:
   - component: {fileID: 7435695855472460269}
   - component: {fileID: 7435695855472460266}
   - component: {fileID: 7435695855472460265}
-  - component: {fileID: 2984009912413345675}
   m_Layer: 11
   m_Name: Sequencer Object
   m_TagString: Untagged
@@ -722,21 +721,3 @@ MonoBehaviour:
   - Active: 0
     MidiNoteNumber: 60
     Duration: 16
---- !u!114 &2984009912413345675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7435695855472460264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 005dd5fbff76c61468b2b4e09b2cee48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _updateStep: 0.1
-  _sampleDataLength: 1024
-  _loudness: 0
-  _loudest: 0
-  multiplier: 10
-  lightMultiplier: 2
