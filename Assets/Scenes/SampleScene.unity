@@ -2007,7 +2007,7 @@ PrefabInstance:
     - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: 3.32
       objectReference: {fileID: 0}
     - target: {fileID: 959607703987823120, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
         type: 3}
@@ -2094,6 +2094,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 959607703987823126, guid: e6024f054bfe7c04d9b02a3dd931bd2f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6024f054bfe7c04d9b02a3dd931bd2f, type: 3}
 --- !u!1001 &1917047757
@@ -2103,6 +2108,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4803246552340906631, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b0c1575f414529d4c801b0beddb72bcb, type: 3}
+    - target: {fileID: 4803246552340906631, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _numVoices
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803246552340906631, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _attackTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803246552340906631, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _releaseTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956266781377746012, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: updateStep
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956266781377746012, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: multiplier
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7435695855472460264, guid: a8cef0138eaff3b47b8c6455036a07b8,
         type: 3}
       propertyPath: m_Name
@@ -2121,7 +2156,52 @@ PrefabInstance:
     - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
         type: 3}
       propertyPath: _steps.Array.data[7].Active
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _metronome
+      value: 
+      objectReference: {fileID: 647683118}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _steps.Array.data[0].MidiNoteNumber
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _steps.Array.data[0].Duration
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _steps.Array.data[4].Active
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _steps.Array.data[8].Active
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _steps.Array.data[11].Active
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _steps.Array.data[11].MidiNoteNumber
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _steps.Array.data[8].MidiNoteNumber
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435695855472460265, guid: a8cef0138eaff3b47b8c6455036a07b8,
+        type: 3}
+      propertyPath: _steps.Array.data[4].MidiNoteNumber
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 7435695855472460268, guid: a8cef0138eaff3b47b8c6455036a07b8,
         type: 3}
