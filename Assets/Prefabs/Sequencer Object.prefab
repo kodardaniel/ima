@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 7435695855472460269}
   - component: {fileID: 7435695855472460266}
   - component: {fileID: 7435695855472460265}
-  - component: {fileID: 2984009912413345675}
+  - component: {fileID: 5956266781377746012}
   m_Layer: 11
   m_Name: Sequencer Object
   m_TagString: Untagged
@@ -111,7 +111,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8c6f3796b089f47bebc2ed3dd555dc06, type: 2}
+  - {fileID: 2100000, guid: 88bde152d76ec468baa71d105fbc8d3a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -722,7 +722,7 @@ MonoBehaviour:
   - Active: 0
     MidiNoteNumber: 60
     Duration: 16
---- !u!114 &2984009912413345675
+--- !u!114 &5956266781377746012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -731,12 +731,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7435695855472460264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 005dd5fbff76c61468b2b4e09b2cee48, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f96f8dd4f24546518b82847ece25f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateStep: 0.1
-  _sampleDataLength: 1024
-  _loudness: 0
-  _loudest: 0
+  amp: []
+  averagesSum: 0
   multiplier: 10
-  lightMultiplier: 2
