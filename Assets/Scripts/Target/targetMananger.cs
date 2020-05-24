@@ -17,12 +17,6 @@ public class targetMananger : MonoBehaviour
         randomizePosition();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void randomizePosition()
     {
         x = Random.Range(-worldRadius, worldRadius);
