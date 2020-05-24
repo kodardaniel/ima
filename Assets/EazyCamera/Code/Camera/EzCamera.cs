@@ -214,6 +214,7 @@ public class EzCamera : MonoBehaviour
 #if UNITY_EDITOR
         }
 #endif
+        m_zoomDelta -= Input.GetAxis("Mouse ScrollWheel") * m_settings.ZoomSpeed;
     }
 
     private void LateUpdate()
