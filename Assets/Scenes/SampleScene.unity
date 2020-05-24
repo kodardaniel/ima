@@ -1677,6 +1677,11 @@ PrefabInstance:
       propertyPath: m_orbitEnabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114060052122914996, guid: 4487d25d2ae7f204db88b10584eafe95,
+        type: 3}
+      propertyPath: m_lockOnEnabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4487d25d2ae7f204db88b10584eafe95, type: 3}
 --- !u!1 &855221833
