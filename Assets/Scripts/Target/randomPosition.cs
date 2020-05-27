@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class randomPosition : MonoBehaviour
 {
-    public float worldRadius = 500f;
+    public float worldRadius = 250f;
     
     float x;
     float y;
