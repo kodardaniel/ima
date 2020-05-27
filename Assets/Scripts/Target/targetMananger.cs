@@ -17,7 +17,7 @@ public class targetMananger : MonoBehaviour
         randomizePosition();
     }
 
-    void randomizePosition()
+    public void randomizePosition()
     {
         x = Random.Range(-worldRadius, worldRadius);
         y = Random.Range(-worldRadius, worldRadius);
