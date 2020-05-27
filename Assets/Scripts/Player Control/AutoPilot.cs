@@ -10,7 +10,7 @@ public class AutoPilot : MonoBehaviour
     [SerializeField]
     float speed = 1.0f;
     [SerializeField]
-    targetMananger targetManager;
+    randomPosition randomPosition;
 
     void Awake()
     {
@@ -35,7 +35,7 @@ public class AutoPilot : MonoBehaviour
         if (Vector3.Distance(transform.position, target.position) < 0.001f)
         {
             // Swap the position of the cylinder.
-            targetManager.randomizePosition();
+            randomPosition.randomizePosition();
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class targetMananger : MonoBehaviour
+public class randomPosition : MonoBehaviour
 {
     public float worldRadius = 500f;
     
