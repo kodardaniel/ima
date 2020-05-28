@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 8490142196741347349}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -131,7 +131,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.7799988
+      value: 1
       inSlope: -0.0053623435
       outSlope: -0.0053623435
       tangentMode: 0
@@ -139,14 +139,14 @@ AudioSource:
       inWeight: 0
       outWeight: 1
     - serializedVersion: 3
-      time: 0.11348724
-      value: 0.7229843
-      inSlope: -1.3241537
-      outSlope: -1.3241537
+      time: 0.17207336
+      value: 0.83000946
+      inSlope: -2.1619778
+      outSlope: -2.1619778
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.821538
-      outWeight: 0.15766509
+      outWeight: 0.29056147
     - serializedVersion: 3
       time: 0.29599705
       value: 0.30927086
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amp: {fileID: 4985049727656840499}
-  multiplier: 10
+  multiplier: 15
 --- !u!114 &6865914881860096759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,4 +312,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0bb97abd412a1e48b048164640fa91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldRadius: 500
