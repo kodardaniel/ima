@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class randomPosition : MonoBehaviour
 {
-    public float worldRadius = 250f;
-    
     float x;
     float y;
     float z;
@@ -19,9 +17,9 @@ public class randomPosition : MonoBehaviour
 
     public void randomizePosition()
     {
-        x = Random.Range(-worldRadius, worldRadius);
-        y = Random.Range(-worldRadius, worldRadius);
-        z = Random.Range(-worldRadius, worldRadius);
+        x = Random.Range(-(world.size / 2), world.size / 2);
+        y = Random.Range(-(world.size / 2), world.size / 2);
+        z = Random.Range(-(world.size / 2), world.size / 2);
         destination = new Vector3(x, y, z);
         transform.position = destination;
     }
