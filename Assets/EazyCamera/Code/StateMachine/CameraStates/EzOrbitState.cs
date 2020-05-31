@@ -68,7 +68,7 @@ public class EzOrbitState : EzCameraState
 
     public override void HandleInput()
     {
-        if (m_controlledCamera.OribtEnabled && Input.GetMouseButtonDown(0))
+        if (m_controlledCamera.OribtEnabled)
         {
             m_controlledCamera.SetState(State.ORBIT);
         }
