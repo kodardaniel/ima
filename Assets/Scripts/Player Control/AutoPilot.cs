@@ -11,6 +11,8 @@ public class AutoPilot : MonoBehaviour
     float speed = 1.0f;
     [SerializeField]
     randomPosition randomPosition;
+    [SerializeField]
+    LineRenderer line;
 
     void Awake()
     {
@@ -20,7 +22,7 @@ public class AutoPilot : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {    
         
     }
 
@@ -36,6 +38,11 @@ public class AutoPilot : MonoBehaviour
         {
             // Swap the position of the cylinder.
             randomPosition.randomizePosition();
+            // Set line target position
+            line.SetPosition(1, target.transform.position);
         }
+
+        // Draw Line
+        line.SetPosition(0, transform.position);
     }
 }

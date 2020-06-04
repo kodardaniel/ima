@@ -3255,6 +3255,7 @@ MonoBehaviour:
   target: {fileID: 979421700}
   speed: 2
   randomPosition: {fileID: 979421701}
+  line: {fileID: 985905394}
 --- !u!4 &985905393
 Transform:
   m_ObjectHideFlags: 0
@@ -3312,7 +3313,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 5, y: 10, z: 1}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -3320,22 +3321,13 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0.7999954
-        inSlope: 0.5324331
-        outSlope: 0.5324331
+        time: 0.45599365
+        value: 0.039133072
+        inSlope: -2.3717546
+        outSlope: -2.3717546
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.098
-      - serializedVersion: 3
-        time: 1
-        value: 0.16955566
-        inSlope: -2.3809526
-        outSlope: -2.3809526
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.18708238
+        inWeight: 0.14472497
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -4131,7 +4123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517791187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 0.05, z: 1.5}
   m_Children: []
   m_Father: {fileID: 985905393}
