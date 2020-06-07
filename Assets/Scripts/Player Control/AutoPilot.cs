@@ -22,8 +22,10 @@ public class AutoPilot : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {    
-        
+    {
+        // Set line start and target position
+        line.SetPosition(1, target.transform.position);
+        line.SetPosition(0, transform.position);
     }
 
     // Update is called once per frame
@@ -42,7 +44,7 @@ public class AutoPilot : MonoBehaviour
             line.SetPosition(1, target.transform.position);
         }
 
-        // Draw Line
+        // Set line start position
         line.SetPosition(0, transform.position);
     }
 }
