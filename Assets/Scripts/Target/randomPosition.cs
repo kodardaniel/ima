@@ -17,9 +17,9 @@ public class randomPosition : MonoBehaviour
 
     public void randomizePosition()
     {
-        x = Random.Range(-(world.size / 2), world.size / 2);
-        y = Random.Range(-(world.size / 2), world.size / 2);
-        z = Random.Range(-(world.size / 2), world.size / 2);
+        x = Random.Range(-(world.sizeX / 2), world.sizeX / 2);
+        y = Random.Range(-(world.sizeY / 2), world.sizeY / 2);
+        z = Random.Range(-(world.sizeZ / 2), world.sizeZ / 2);
         destination = new Vector3(x, y, z);
         transform.position = destination;
     }

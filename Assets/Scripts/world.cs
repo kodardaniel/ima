@@ -5,7 +5,9 @@ using UnityEngine;
 public class world : MonoBehaviour
 {
 
-    public static float size = 500;
+    public static float sizeX = 500;
+    public static float sizeY = 200;
+    public static float sizeZ = 300;
 
     // Start is called before the first frame update
     void Start()

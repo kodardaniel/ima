@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4985049727656840499}
   - component: {fileID: 7407989747514050887}
   - component: {fileID: 6865914881860096759}
+  - component: {fileID: 557541836662247330}
   m_Layer: 10
   m_Name: Random Sound Object
   m_TagString: Untagged
@@ -312,3 +313,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0bb97abd412a1e48b048164640fa91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &557541836662247330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490142196741347349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48728a108db694e3eacdf4a0a704f0e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
