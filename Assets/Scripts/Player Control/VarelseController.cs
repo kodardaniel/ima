@@ -45,4 +45,9 @@ public class VarelseController : MonoBehaviour
         z = UnityEngine.Random.Range(-(world.sizeZ / 2), world.sizeZ / 2);
         destination = new Vector3(x, y, z);
     }
+
+    void OnMouseDown()
+    {
+        Debug.Log("Clicked!");
+    }
 }
