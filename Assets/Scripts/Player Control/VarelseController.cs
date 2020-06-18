@@ -5,16 +5,21 @@ using UnityEngine;
 
 public class VarelseController : MonoBehaviour
 {
-    float speed;
 
     float x;
     float y;
     float z;
     Vector3 destination;
+    Transform player;
+    [SerializeField]
+    bool followingPlayer = false;
+    [SerializeField]
+    float speed;
 
     void Awake()
     {
-        speed = UnityEngine.Random.Range(0.2f, 4f);
+        speed = UnityEngine.Random.Range(4f, 10f);
+        player = GameObject.Find("Player").transform;
     }
 
     // Start is called before the first frame update
@@ -26,16 +31,23 @@ public class VarelseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Move our position a step closer to the target.
         float step = speed * Time.deltaTime; // calculate distance to move
-        transform.position = Vector3.MoveTowards(transform.position, destination, step);
 
-        // Check if the position of the cube and sphere are approximately equal.
-        if (Vector3.Distance(transform.position, destination) < 0.001f)
+        // If following player is active, move towards player, else move towards random destination
+        if (followingPlayer)
         {
-            // Swap the position of the cylinder.
-            randomizeDestination();
+            transform.position = Vector3.MoveTowards(transform.position, player.position, step);
         }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, destination, step);
+            // If arrived to approximately random destination, randomize destination
+            if (Vector3.Distance(transform.position, destination) < 0.001f)
+            {
+                randomizeDestination();
+            }
+        }
+
     }
 
     void randomizeDestination()
@@ -48,6 +60,6 @@ public class VarelseController : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Clicked!");
+        followingPlayer = !followingPlayer;
     }
 }
