@@ -121,9 +121,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 800
+  MaxDistance: 120
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -140,8 +140,8 @@ AudioSource:
       inWeight: 0
       outWeight: 1
     - serializedVersion: 3
-      time: 0.17207336
-      value: 0.83000946
+      time: 0.13243103
+      value: 0.82675934
       inSlope: -2.1619778
       outSlope: -2.1619778
       tangentMode: 0
@@ -149,17 +149,17 @@ AudioSource:
       inWeight: 0.821538
       outWeight: 0.29056147
     - serializedVersion: 3
-      time: 0.29599705
-      value: 0.30927086
-      inSlope: -1.9092741
-      outSlope: -1.9092741
+      time: 0.1946787
+      value: 0.38715172
+      inSlope: -8.275849
+      outSlope: -8.275849
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.053432766
     - serializedVersion: 3
-      time: 0.7468262
-      value: 0
+      time: 0.34373474
+      value: 0.006500244
       inSlope: -0.13129722
       outSlope: -0.13129722
       tangentMode: 0
@@ -325,4 +325,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48728a108db694e3eacdf4a0a704f0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingPlayer: 0
   speed: 0
