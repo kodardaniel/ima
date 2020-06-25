@@ -37,7 +37,7 @@ public class AutoPilot : MonoBehaviour
         if (Vector3.Distance(transform.position, target.position) < 0.001f)
         {
             // Swap the position of the cylinder.
-            randomPosition.randomizePosition();
+            randomPosition.randomizePosition(randomPosition.yMin, randomPosition.yMax);
             // Set line target position
             line.SetPosition(1, target.transform.position);
         }
