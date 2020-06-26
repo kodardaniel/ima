@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffsetHeight: 0.55
   LateralOffset: 0
-  MaxLateralOffset: 5
-  OffsetDistance: 165.33333
+  MaxLateralOffset: 0
+  OffsetDistance: 98.666664
   MaxDistance: 300
   MinDistance: 4
   ZoomSpeed: 120
   ResetSpeed: 100
-  RotateSpeed: 300
-  MaxRotX: 89
-  MinRotX: -75
+  RotateSpeed: 10000
+  MaxRotX: 360
+  MinRotX: -360
