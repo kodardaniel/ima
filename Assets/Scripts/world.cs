@@ -6,7 +6,6 @@ public class world : MonoBehaviour
 {
 
     public static float sizeX = 500;
-    public static float sizeY = 200;
     public static float sizeZ = 300;
 
     public const float yMin = -100;

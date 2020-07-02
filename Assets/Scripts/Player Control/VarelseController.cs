@@ -53,7 +53,7 @@ public class VarelseController : MonoBehaviour
     void randomizeDestination()
     {
         x = UnityEngine.Random.Range(-(world.sizeX / 2), world.sizeX / 2);
-        y = UnityEngine.Random.Range(-(world.sizeY / 2), world.sizeY / 2);
+        y = UnityEngine.Random.Range(world.yMin, world.yMax);
         z = UnityEngine.Random.Range(-(world.sizeZ / 2), world.sizeZ / 2);
         destination = new Vector3(x, y, z);
     }
